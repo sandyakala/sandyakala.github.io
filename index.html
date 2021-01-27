@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Final Project</title>
+  <!-- <link rel="stylesheet" href="./bootstrap.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <!-- Awal navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Sandyakala</a>
+      <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+        <span class="navbar-toggler-icons"></span>
+      </button> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir navbar -->
+
+  <!-- Awal header -->
+  <header>
+    <div class="container">
+      <div class="bg-light p-5 rounded-lg m-3 text-center">
+        <h1>Tugas Akhir</h1>
+        <P>Algoritma dan Pemrograman Java</P>
+        <p>By. Habiburrahman TI 20-101</p>
+        <P>Rabu, 27 Januari 2021</P>
+      </div>
+    </div>
+  </header>
+  <!-- Akhir header -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Author: Habiburrahman</h4>
+        <a href="./img/raiden.jpg">
+          <img id="me" class="img-thumbnail" src="./img/raiden.jpg" alt="Raiden">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Awal content -->
+  <div class="container">
+    <!-- Row for If section -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="h3">Apa itu If?</div>
+        <p>If berasal dari bahasa Inggris yang berarti 'Jika'. <br> Dalam dunia programming, If adalah statement untuk mengatur alur jalannya suatu program, jika kondisi seperti ini maka lakukan ini, dan jika kondisi seperti itu maka lakukan hal tersebut.</p>
+        <p>Contoh penulisan sintaks-nya adalah seperti dibawah ini:</p>
+        <blockquote class="box blockquote">If (kondisi == true) { <br> lakukan perintah <br> } else { <br> lakukan perintah lain <br> }
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Awal baris soal -->
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Contoh kasus</h4>
+        <h5>1. Buatlah program yang mencetak "Angka genap" jika user memasukan angka genap, begitu pula sebaliknya.</h5>
+        <h5>2. Buatlah program syarat naik hysteria, contoh tinggi minimum & umur.</h5>
+      </div>
+    </div>
+    <!-- Akhir baris soal -->
+
+    <!-- Awal ket -->
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Keterangan</h4>
+        <h5>Output Program 1 & 2 bergantung pada inputan user. <br>Inputan yang berbeda akan menghasilkan hasil yang berbeda.</h5>
+      </div>
+    </div>
+
+    <!-- Baris untuk bagian contoh -->
+    <div class="row">
+      <div class="col-md-8">
+        <h4>Contoh program If:</h4>
+        <h5>Program ganjil genap</h5>
+        <a href="./img/if_01.png" target="_blank">
+          <img class="img-thumbnail" src="./img/if_01.png" alt="Java">
+        </a>
+        <!-- <p class="text-center"><i>Gambar Program If Ganjil Genap</i></p> -->
+        <h5>Program naik Hysteria</h5>
+        <a href="./img/if_02.png">
+          <img class="img-thumbnail" src="./img/if_02.png" alt="Java">
+        </a>
+      </div>
+    </div>
+
+    <!-- Baris untuk bagian output -->
+    <div class="row">
+      <div class="col-md-8">
+        <h5>Output dari contoh program pertama jika inputan-nya angka genap:</h5>
+        <a href="./img/if_01_output_genap.png" target="_blank">
+          <img class="img-thumbnail" src="./img/if_01_output_genap.png" alt="Java">
+        </a>
+        <hr>
+        <h5>Output dari contoh program pertama jika inputan-nya angka ganjil:</h5>
+        <a href="./img/if_01_output_ganjil.png" target="_blank">
+          <img class="img-thumbnail" src="./img/if_01_output_ganjil.png" alt="Java">
+        </a>
+        <hr>
+        <h5>Output dari program hysteria jika memenuhi persyaratan:</h5>
+        <a href="./img/if_02_output.png" target="_blank">
+        <img class="img-thumbnail" src="./img/if_02_output.png" alt="Java">
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Awal section looping -->
+    <section id="loop">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="h3">Apa itu looping?</div>
+            <p>Looping berasal dari bahasa Inggris yang berarti 'Putaran'.
+              <br> Dalam dunia pemrograman, looping sendiri adalah sebuah statement yang menjalankan sebuah perintah berulang kali selama kondisi yang ditentukan bernilai <i>True</i> atau sampai kondisi tertentu.</p>
+              <p>Contoh penulisan sintaks untuk looping jenis for loop:</p>
+              <blockquote class="box blockquote">for(int i = 0; i < kondisi; i++) {<br> perintah yang akan dijalankan berulang<br>}</blockquote>
+          </div>
+        </div>
+
+        <!-- Awal baris soal -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh kasus</h4>
+            <h5>1. Buatlah program faktorial berdasarkan input dari user!</h5>
+            <h5>2. Buatlah program yang mencetak segitiga siku-siku berdasarkan input dari user!</h5>
+          </div>
+        </div>
+        <!-- Akhir baris soal -->
+
+        <!-- Ket -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Keterangan</h4>
+            <h5>1. Program 1 menggunakan rumus faktorial yaitu n! = n x (n - 1) ... x 1 dalam looping</h5>
+            <h5>2. Program 2 merupakan setengah pyramid.</h5>
+          </div>
+        </div>
+        <!-- Akhir ket -->
+  
+        <!-- Baris untuk contoh program -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh program looping:</h4>
+            <h5>Program Faktorial</h5>
+            <a href="./img/looping_01.png" target="_blank">
+              <img class="img-thumbnail" src="./img/looping_01.png" alt="Java">
+            </a>
+            <!-- <p class="text-center"><i>gambar program faktorial</i></p> -->
+            
+            <h5>Program Cetak Segitiga siku-siku</h5>
+            <a href="./img/looping_02.png" target="_blank">
+              <img class="img-thumbnail" src="./img/looping_02.png" alt="Java">
+            </a>
+            <!-- <p class="text-center"><i>gambar program cetak segitiga</i></p> -->
+          </div>
+        </div>
+        <!-- Akhir bagian contoh program -->
+
+        <!-- Awal bagian output -->
+        <div class="row">
+          <div class="col-md-8">
+            <h5>Output dari program faktorial jika user memasukan angka 4</h5>
+            <a href="./img/looping_01_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/looping_01_output.png" alt="Java">
+            </a>
+            <hr>
+            <h5>Output dari program cetak segitiga siku-siku jika user menginput 5 baris</h5>
+            <a href="./img/looping_02_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/looping_02_output.png" alt="Java">
+            </a>
+          </div>
+        </div>
+        <!-- Akhir bagian output -->
+      </div>
+    </section>
+    <!-- Akhir section looping -->
+
+    <!-- Awal section array -->
+    <section id="array">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="h3">Apa itu Array?</div>
+            <p>Array adalah struktur data yang dapat menampung banyak kumpulan data.
+            <br>Array juga menggunakan indeks untuk memudahkan akses terhadap data yang disimpan.
+              <br>Indeks array dimulai dari angka 0.
+              <br>Sedangkan looping array adalah statement atau proses mengiterasi sebuah array.
+            </p>
+            <p>Cara deklarasi sebuah array:</p>
+            <blockquote class="box blockquote">tipeData namaArray [ukuranArray]; <br>e.g. int kelas [5]; </blockquote>
+          </div>
+        </div>
+
+        <!-- Awal baris soal -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh kasus</h4>
+            <h5>1. Buatlah program untuk menghitung berapa banyak angka ganjil dalam sebuah array!</h5>
+            <h5>2. Buatlah program array daftar belanja berdasarkan inputan user!</h5>
+          </div>
+        </div>
+        <!-- Akhir baris soal -->
+
+        <!-- Awal ket -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Keterangan</h4>
+            <h5>1. Program 1 menambahkan 1 nilai terhadap variable genap setiap bertemu angka genap dalam array.</h5>
+            <h5>2. Program 2 menambahkan isi dari berdasarkan inputan user.</h5>
+          </div>
+        </div>
+        <!-- Akhir ket -->
+
+        <!-- Awal contoh program -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh program Array:</h4>
+            <h5>Program mencari berapa banyak angka genap dalam array</h5>
+            <a href="./img/la_01.png" target="_blank">
+              <img class="img-thumbnail" src="./img/la_01.png" alt="Java">
+            </a>
+
+            <h5>Program list daftar barang belanja</h5>
+            <a href="./img/la_02.png" target="_blank">
+              <img class="img-thumbnail" src="./img/la_02.png" alt="Java">
+            </a>
+          </div>
+        </div>
+        <!-- Akhir contoh program -->
+
+        <!-- Awal baris output -->
+        <div class="row">
+          <div class="col-md-8">
+            <h5>Output contoh program 1</h5>
+            <a href="./img/la_01_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/la_01_output.png" alt="Java">
+            </a>
+            <hr>
+            <h5>Output contoh program 2</h5>
+            <a href="./img/la_02_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/la_02_output.png" alt="Java">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Awal section array -->
+
+    <!-- Awal section procedure -->
+    <section id="procedure">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="h3">Apa itu Procedure?</div>
+            <p>Procedure adalah sebutan untuk fungsi yang tidak mengembalikan nilai <i>void</i>.
+            <br>Tujuan dari procedure adalah untuk menyederhanakan struktur kode / manajemen kode.
+            <br>Biasanya procedure berisi rumus, hitungan, laporan dll.
+            </p>
+            <p>Cara pembuatan procedure / fungsi:</p>
+            <blockquote class="box blockquote">static tipeData namaFungsi() {<br>isi fungsi<br>}</blockquote>
+          </div>
+        </div>
+
+        <!-- Awal baris soal -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh kasus</h4>
+            <h5>1. Buatlah program perkalian sederhana berdasarkan inputan user!</h5>
+            <h5>2. Buatlah program hitung luas lingkaran berdasarkan inputan user!</h5>
+          </div>
+        </div>
+        <!-- Akhir baris soal -->
+
+        <!-- Awal ket -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Keterangan</h4>
+            <h5>1. Program 1 mengkalikan dua angka berdasarkan inputan user</h5>
+            <h5>2. Program 2 menggunakan rumus luas lingkaran L = pi x r<sup>2</sup></h5>
+          </div>
+        </div>
+
+        <!-- Awal contoh program -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh program procedure:</h4>
+            <h5>Program perkalian</h5>
+            <a href="./img/procedure_01.png" target="_blank">
+              <img class="img-thumbnail" src="./img/procedure_01.png" alt="Java">
+            </a>
+
+            <h5>Program rumus mencari luas lingkaran</h5>
+            <a href="./img/procedure_02.png" target="_blank">
+              <img class="img-thumbnail" src="./img/procedure_02.png" alt="Java">
+            </a>
+          </div>
+        </div>
+        <!-- Akhir contoh program -->
+
+        <!-- Awal baris output -->
+        <div class="row">
+          <div class="col-md-8">
+            <h5>Output program 1</h5>
+            <a href="./img/procedure_01_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/procedure_01_output.png" alt="Java">
+            </a>
+            <hr>
+            <h5>Output Program 2</h5>
+            <a href="./img/procedure_02_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/procedure_02_output.png" alt="Java">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir section procedure -->
+
+    <!-- Awal section looping procedure -->
+    <section id="looping-array">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="h3">Looping Procedure</div>
+            <p>Looping procedure adalah penggabungan dari looping dan procedure.</p>
+          </div>
+        </div>
+
+        <!-- Awal baris soal -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh kasus</h4>
+            <h5>1. Modifikasi program dari looping sebelumnya menjadi procedure!</h5>
+          </div>
+        </div>
+        <!-- Akhir baris soal -->
+
+        <!-- Awal baris keterangan -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Keterangan</h4>
+            <h5>Program pertama dan kedua merupakan hasil modifikasi dari program looping sebelumnya menjadi sebuah procedure.</h5>
+          </div>
+        </div>
+        <!-- Akhir baris keterangan -->
+
+        <!-- Awal contoh program -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Contoh program Looping Procedure</h4>
+            <h5>Program 1</h5>
+            <a href="./img/lp01.png" target="_blank">
+              <img class="img-thumbnail" src="./img/lp01.png" alt="Java">
+            </a>
+
+            <h5>Program 2</h5>
+            <a href="./img/lp02.png" target="_blank">
+              <img class="img-thumbnail" src="./img/lp02.png" alt="Java">
+            </a>
+          </div>
+        </div>
+        <!-- Akhir contoh program -->
+
+        <!-- Awal baris output -->
+        <div class="row">
+          <div class="col-md-8">
+            <h5>Output program 1</h5>
+            <a href="./img/lp01_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/lp01_output.png" alt="Java">
+            </a>
+            <hr>
+            <h5>Output program 2</h5>
+            <a href="./img/lp02_output.png" target="_blank">
+              <img class="img-thumbnail" src="./img/lp02_output.png" alt="Java">
+            </a>
+          </div>
+        </div>
+        <!-- Akhir baris output -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p>&copy; Copyright 2021 | Built by. <a href="https://instagram.com/433">Habiburrahman</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- <script src="./bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
